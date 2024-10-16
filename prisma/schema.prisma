@@ -12,7 +12,15 @@ datasource db {
 }
 
 model Property {
-  id    Int    @id @default(autoincrement())
-  key   String
-  value String
+  id       Int     @id @default(autoincrement())
+  key      String
+  value    String
+  parent   Parent? @relation(fields: [parentId], references: [id])
+  parentId Int?
+}
+
+model Parent {
+  id Int @id @default(autoincrement())
+
+  properties Property[]
 }
