@@ -43,7 +43,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cloudflare/next-on-pages@npm:1":
+"@cloudflare/next-on-pages@npm:1.13.5":
   version: 1.13.5
   resolution: "@cloudflare/next-on-pages@npm:1.13.5"
   dependencies:
@@ -896,7 +896,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/eslint@npm:8, @types/eslint@npm:^8.44.6":
+"@types/eslint@npm:^8.44.6":
   version: 8.56.12
   resolution: "@types/eslint@npm:8.56.12"
   dependencies:
@@ -1000,15 +1000,6 @@ __metadata:
     "@types/prop-types": "npm:*"
     csstype: "npm:^3.0.2"
   checksum: 10c0/ce80512246ca5bda69db85b9f4f1835189334acfb6b2c4f3eda8cabff1ff1a3ea9ce4f3b895bdbc18c94140aa45592331aa3fdeb557f525c1b048de7ce84fc0e
-  languageName: node
-  linkType: hard
-
-"@types/xo@npm:0":
-  version: 0.39.9
-  resolution: "@types/xo@npm:0.39.9"
-  dependencies:
-    "@types/eslint": "npm:8"
-  checksum: 10c0/6427df6f1562bd11c8e20dbd5f81dcc17b50c33fd7fe5991a684de54f4daa83bf0a85fed28c0c5bdb57bf0cc964df33c96f2130365a45e3c960f8d3f1f3d69da
   languageName: node
   linkType: hard
 
@@ -6684,14 +6675,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "prisma-d1-perf-benchmark@workspace:."
   dependencies:
-    "@cloudflare/next-on-pages": "npm:1"
+    "@cloudflare/next-on-pages": "npm:1.13.5"
     "@cloudflare/workers-types": "npm:4.20241011.0"
     "@prisma/adapter-d1": "npm:5.21.0"
     "@prisma/client": "npm:5.21.0"
     "@types/node": "npm:20"
     "@types/react": "npm:18"
     "@types/react-dom": "npm:18"
-    "@types/xo": "npm:0"
     eslint: "npm:9.11.1"
     eslint-config-prettier: "npm:9.1.0"
     eslint-config-xo: "npm:0.46.0"
@@ -6705,9 +6695,9 @@ __metadata:
     prettier: "npm:3.3.3"
     prettier-plugin-tailwindcss: "npm:0.6.8"
     prisma: "npm:5.21.0"
-    react: "npm:18"
-    react-dom: "npm:18"
-    typescript: "npm:5"
+    react: "npm:18.3.1"
+    react-dom: "npm:18.3.1"
+    typescript: "npm:5.6.3"
     vercel: "npm:37.8.0"
     wrangler: "npm:3.80.5"
     xo: "npm:0.59.3"
@@ -6807,7 +6797,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-dom@npm:18":
+"react-dom@npm:18.3.1":
   version: 18.3.1
   resolution: "react-dom@npm:18.3.1"
   dependencies:
@@ -6826,7 +6816,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:18":
+"react@npm:18.3.1":
   version: 18.3.1
   resolution: "react@npm:18.3.1"
   dependencies:
@@ -7973,7 +7963,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:5, typescript@npm:^5.5.3":
+"typescript@npm:5.6.3, typescript@npm:^5.5.3":
   version: 5.6.3
   resolution: "typescript@npm:5.6.3"
   bin:
@@ -7993,7 +7983,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@npm%3A5#optional!builtin<compat/typescript>, typescript@patch:typescript@npm%3A^5.5.3#optional!builtin<compat/typescript>":
+"typescript@patch:typescript@npm%3A5.6.3#optional!builtin<compat/typescript>, typescript@patch:typescript@npm%3A^5.5.3#optional!builtin<compat/typescript>":
   version: 5.6.3
   resolution: "typescript@patch:typescript@npm%3A5.6.3#optional!builtin<compat/typescript>::version=5.6.3&hash=8c6c40"
   bin:

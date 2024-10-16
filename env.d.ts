@@ -3,3 +3,12 @@
 type CloudflareEnv = {
 	DB: D1Database
 }
+
+declare global {
+	namespace NodeJS {
+		interface ProcessEnv extends CloudflareEnv {}
+	}
+}
+
+// Ensure this file is treated as a module
+export {}
