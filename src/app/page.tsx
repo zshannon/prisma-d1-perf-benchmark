@@ -1,20 +1,20 @@
-import { countProperties, writeProperties } from '~/app/actions'
+import { clearDb } from '~/app/actions'
+import { PerformanceTest } from '~/app/components'
 
 export const runtime = 'edge'
 
 export default async function Home() {
-	const count = await countProperties()
 	return (
 		<main>
-			{JSON.stringify({ count })}
 			<form
 				action={async () => {
 					'use server'
-					await writeProperties(10)
+					await clearDb()
 				}}
 			>
-				<button type="submit">write properties</button>
+				<button type="submit">Clear DB</button>
 			</form>
+			<PerformanceTest />
 		</main>
 	)
 }
