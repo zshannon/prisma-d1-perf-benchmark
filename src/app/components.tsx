@@ -1,5 +1,5 @@
 'use client'
-
+import prettyMilliseconds from 'pretty-ms'
 import { useState } from 'react'
 
 import { writeProperties } from '~/app/actions'
@@ -50,10 +50,10 @@ export function PerformanceTest() {
 					<li key={test.start}>
 						{[
 							i,
-							Math.round(test.numberOfRecordsToCreate * 1000),
-							Math.round(test.prismaMs * 1000),
-							Math.round(test.prismaSqlMs * 1000),
-							Math.round(test.d1SqlMs * 1000),
+							test.numberOfRecordsToCreate,
+							prettyMilliseconds(Math.round(test.prismaMs)),
+							prettyMilliseconds(Math.round(test.prismaSqlMs)),
+							prettyMilliseconds(Math.round(test.d1SqlMs)),
 						].join(',')}
 					</li>
 				))}
