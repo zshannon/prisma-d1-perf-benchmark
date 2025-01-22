@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "definitions": {
+    "Property": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "key": {
+          "type": "string"
+        },
+        "value": {
+          "type": "string"
+        },
+        "parent": {
+          "anyOf": [
+            {
+              "$ref": "#/definitions/Parent"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    },
+    "Parent": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "properties": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Property"
+          }
+        }
+      }
+    }
+  },
+  "type": "object",
+  "properties": {
+    "property": {
+      "$ref": "#/definitions/Property"
+    },
+    "parent": {
+      "$ref": "#/definitions/Parent"
+    }
+  }
+}
