@@ -4,14 +4,14 @@
     "@prisma/adapter-d1": "6.2.1",
     "@prisma/client": "6.2.1",
     "luxon": "3.5.0",
-    "next": "14.2.15",
+    "next": "15.1.6",
     "pretty-ms": "9.2.0",
-    "react": "18.3.1",
-    "react-dom": "18.3.1"
+    "react": "19.0.0",
+    "react-dom": "19.0.0"
   },
   "devDependencies": {
-    "@cloudflare/next-on-pages": "1.13.5",
-    "@cloudflare/workers-types": "4.20241011.0",
+    "@cloudflare/next-on-pages": "1.13.7",
+    "@cloudflare/workers-types": "4.20250121.0",
     "@types/luxon": "^3",
     "@types/node": "20",
     "@types/react": "18",
@@ -28,10 +28,10 @@
     "prettier": "3.3.3",
     "prettier-plugin-tailwindcss": "0.6.8",
     "prisma": "6.2.1",
-    "typescript": "5.6.3",
-    "vercel": "37.8.0",
-    "wrangler": "3.80.5",
-    "xo": "0.59.3"
+    "typescript": "5.7.3",
+    "vercel": "39.3.0",
+    "wrangler": "3.103.2",
+    "xo": "0.60.0"
   },
   "name": "prisma-d1-perf-benchmark",
   "private": true,
